@@ -16,7 +16,7 @@ a.innerHTML=`
 clr=setInterval(() => {
 let a=new Date();   
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-let time_date=a.getHours() + ':'+a.getMinutes()+':'+a.getSeconds()+" on "+ month[a.getMonth()]+" "+a.getDay()+", "+a.getFullYear();
+let time_date=a.getHours() + ':'+a.getMinutes()+':'+a.getSeconds()+" on "+ month[a.getMonth()]+" "+ a.getDate()+", "+a.getFullYear();
 document.getElementById("time").innerHTML=" "+time_date;
 }, Infinity);
 
